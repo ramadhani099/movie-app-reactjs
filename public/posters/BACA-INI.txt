@@ -1,0 +1,2 @@
+Taruh gambar poster (rasio 2:3, mis. 400x600) di folder ini.
+Contoh: duty.jpg -> di movies.js tulis poster: "/posters/duty.jpg"

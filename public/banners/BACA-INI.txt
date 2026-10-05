@@ -1,0 +1,2 @@
+Taruh gambar banner (rasio 16:9, mis. 1440x810) di folder ini.
+Contoh: duty.jpg -> di movies.js tulis banner: "/banners/duty.jpg"
