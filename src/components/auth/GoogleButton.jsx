@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { btnOutline } from "../../theme";
+import assetUrl from "../../utils/assetUrl";
 
 // Logo diambil dari /public/google-logo.svg (file resmi dari Google).
 // Selama file belum ada, tombol menampilkan huruf "G" sebagai pengganti.
@@ -13,11 +14,10 @@ export default function GoogleButton({ label, onClick }) {
         {noLogo ? (
           <span className="font-black text-[#4285F4]">G</span>
         ) : (
-          <img src="/google-logo.svg" alt="" width="20" height="20" onError={() => setNoLogo(true)} />
+          <img src={assetUrl("/google-logo.svg")} alt="" width="20" height="20" onError={() => setNoLogo(true)} />
         )}
         {label}
       </button>
     </>
   );
 }
-
